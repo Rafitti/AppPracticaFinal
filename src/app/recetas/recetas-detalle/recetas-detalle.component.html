@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-xs-12">
+        <img [src]="receta.imagenesPath" [alt]="receta.nombre" class="img-responsive"
+        style="max-height: 300px">
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1>{{receta.nombre}}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group">
+            <button
+            type="button"
+            class="btn btn-primary dropdown-toogle">
+            Manejo de Receta <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Agregar a la lista de compras</a></li>
+                <li><a href="#">Editar Receta</a></li>
+                <li><a href="#">Borrar Receta</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+      {{receta.descripcion}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        Ingredientes
+    </div>
+</div>
